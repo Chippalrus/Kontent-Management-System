@@ -1,0 +1,50 @@
+<link type="text/css" rel="stylesheet" href="%3JSDIR%/includes/main.css">
+		<script type="module">
+			import * as THREE from '%3JSDIR%/build/three.module.js';
+			import { TrackballControls } from '%3JSDIR%/includes/jsm/controls/TrackballControls.js';
+			import { TDSLoader } from '%3JSDIR%/includes/jsm/loaders/TDSLoader.js';
+			var container, controls;
+			var camera, scene, renderer;
+			init();
+			animate();
+			function init() {
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+				camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 10 );
+				camera.position.z = 2;
+				scene = new THREE.Scene();
+				scene.add( new THREE.HemisphereLight() );
+				var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+				directionalLight.position.set( 0, 0, 2 );
+				scene.add( directionalLight );
+				//3ds files dont store normal maps
+				var loader = new THREE.TextureLoader();
+				var normal = loader.load( '%3DSNORMAL%' );
+				var loader = new TDSLoader( );
+				loader.setResourcePath( '%RESOURCEPATH%' );
+				loader.load( '%3DSFILE%', function ( object ) {
+					object.traverse( function ( child ) {
+						if ( child.isMesh ) {
+							child.material.normalMap = normal;
+						}
+					} );
+					scene.add( object );
+				} );
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+				controls = new TrackballControls( camera, renderer.domElement );
+				window.addEventListener( 'resize', resize, false );
+			}
+			function resize() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			}
+			function animate() {
+				controls.update();
+				renderer.render( scene, camera );
+				requestAnimationFrame( animate );
+			}
+		</script>

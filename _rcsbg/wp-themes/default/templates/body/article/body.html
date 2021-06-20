@@ -1,0 +1,15 @@
+<div class="X">
+	<div class="T">
+		<?php echo $aData[ 'name' ] ?>
+		<p><time class="post-time" datetime="%POSTTIME%">%POSTTIME_READ%</time></p>
+		%CATEGORIES%
+		<div class="b-top"></div>
+		<p><?php echo $aData[ 'data' ] ?></p>
+	</div>
+</div>
+<?php if( array_key_exists( 'gallery', $aData ) ){ echo $aData[ 'gallery' ]; } ?>
+<div id="box">
+	<div class="perma-cap">
+		<p>%COMMENTS%</p>
+	</div>
+</div>
