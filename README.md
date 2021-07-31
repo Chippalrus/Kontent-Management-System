@@ -6,7 +6,7 @@ I will be implimenting staggered generation when I feel like it. There are a bun
 A personal project / proof of concept to create blogs by using Google Docs/Drive, with a focus of not relying on MySQL (and backups from webserver). This is not an alternative to a professional CMS or Website Generator.
 > I an not a web-developer, nor do I have any coding discipline. I simply build things out of interest tailored to my own interests and niche needs. This is just for my own use. Do not expect any type of support if you choose to use this.
 
-# Uage
+# Usage
 Requires Google Drive API Key and defined as API_KEY
 - define( 'API_KEY', '' );
 - Call CDriver()->ConstructWebsite( rootDirectoryID, pageSize, thumbnailSize ) to build a website.
