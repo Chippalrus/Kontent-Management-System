@@ -1,4 +1,4 @@
-# Use at own Risk. I keep burning out on it and putting it on hiatus.
+# Hiatus, I keep getting burned out building this.
 Poorly written code. Right now, since I revamped it to work with only shared documents, it currently generates everything all at once, which can cause HTTP timeouts.
 I will be implimenting staggered generation when I feel like it. There are a bunch of optimisation that can also be done, but I'm burnt out on this project. I will be rewriting some code to place the config files outside of scope. Whenever I get around to it.... probably never.
 
