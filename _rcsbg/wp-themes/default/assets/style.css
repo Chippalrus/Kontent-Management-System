@@ -25,7 +25,7 @@
 body{margin:0;background:#f3f3f3;color:#333333;font-size:12px;13px;font-family:'Source Sans Pro',sans-serif!important;font-weight:300;line-height:160%;background-image:url();background-attachment:fixed;}
 a{color:#4f8bb7;text-decoration:none}
 a:hover{color:#cccccc}
-a.btn,a.twitter_btn,a.twitch_btn,a.tumblr_btn,a.youtube_btn,a.btn:hover,a.twitter_btn:hover,a.twitch_btn:hover,a.tumblr_btn:hover,a.youtube_btn:hover,a h2:not(.h2):hover,
+a.btn,a.twitter_btn,a.twitch_btn,a.unity_btn,a.itchio_btn,a.github_btn,a.instagram_btn,a.tumblr_btn,a.youtube_btn,a.btn:hover,a.twitter_btn:hover,a.twitch_btn:hover,a.unity_btn:hover,a.github_btn:hover,a.instagram_btn:hover,a.tumblr_btn:hover,a.youtube_btn:hover,a h2:not(.h2):hover,
 div.fp2,div.fp3,#blog-list:hover,#port-list:hover,#arch-list:hover,a,.X.C a,.link span{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 #container,.X,#box,#FB,.NG{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}
 #H,#Z,#P,#TTT,.G,.C{-webkit-transition:all .6s ease;-moz-transition:all .6s ease;-o-transition:all .6s ease;transition:all .6s ease}
@@ -45,7 +45,7 @@ a#DC{cursor:pointer}
 #H #social{font-family:fontello;margin-top:-20px;float:right}
 #H #social a{margin:15px;font-size:17px;color:rgba(102,102,102,.7)}
 #Z{padding:30px 10px;margin:10px 0 0;opacity:0}
-.X img{max-width:100%;padding:2px;background:#ccc;}
+.X img{max-width:100%;padding:2px;background:none/*#ccc*/;}
 .X video,.X audio{width:100%;max-width:100%;outline:none;border:none}
 .X embed,.X iframe{width:440px;height:225px;outline:none;}
 .X blockquote{padding-left:20px;border-left:3px solid rgba(51,51,51,.5);font-size:12px}
@@ -121,7 +121,7 @@ th,tr:hover{background:#eee;}
 .mod-c:hover{color:#eaeaea;}*/
 .image-w>img{max-width:1100px;margin-top:20px;}
 .image-i{text-align:center;}
-/*h2:not(.h2),*/.h0,.h1,.h2,a.btn,a.twitter_btn,a.twitch_btn,a.youtube_btn,a.read-more
+/*h2:not(.h2),*/.h0b,.h0,.h1,.h2,a.btn,a.twitter_btn,a.twitch_btn,a.unity_btn,a.itchio_btn,a.github_btn,a.instagram_btn,a.youtube_btn,a.read-more
 {
   -webkit-border-radius: 8px;-khtml-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
   width:100%;height:auto;display:block!important;font-size:11px;
@@ -133,31 +133,42 @@ th,tr:hover{background:#eee;}
 -ms-box-shadow:none;-o-box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;*/
 }
 a.btn img,a.tumblr_btn img{float:right;margin:9px 7px;width:30px;height:30px;opacity:1;padding:0;background:none!important;}
-.h0 img,.h1 img,.h2 img{float:right;margin:9px 8px;width:30px;padding:0;background:none!important;}
+.h0b img,.h0 img,.h1 img,.h2 img{float:right;margin:9px 8px;width:30px;padding:0;background:none!important;}
 a.twitter_btn img,a.twitch_btn img{float:right;margin:4px 2px;width:40px;height:40px;opacity:1;padding:0;background:none!important;}
+a.itchio_btn img,a.github_btn img,a.instagram_btn img{float:right;margin:9px 7px;width:30px;height:30px;opacity:1;padding:0;background:none!important;}
+a.unity_btn img{float:right;margin:2px 0px;width:44px;height:44px;opacity:1;padding:0;background:none!important;}
 a.youtube_btn img{float:right;margin:8px 8px;width:30px;height:30px;opacity:1;padding:0;background:none!important;}
-/*h2:not(.h2),*/.h0 div,.h1 div,a.btn div,a.twitter_btn div,a.twitch_btn div,a.tumblr_btn div,a.youtube_btn div{padding:9px 8px 8px 13px;}
-/*h2:not(.h2),*/.h0 span,.h2 span{font-weight:bold}
+/*h2:not(.h2),*/.h0b div,.h0 div,.h1 div,a.btn div,a.twitter_btn div,a.twitch_btn div,a.unity_btn div,a.itchio_btn div,a.github_btn div,a.instagram_btn div,a.tumblr_btn div,a.youtube_btn div{padding:9px 8px 8px 13px;}
+/*h2:not(.h2),*/.h0b span,.h0 span,.h2 span{font-weight:bold}
 /*h2:not(.h2),*/.h1,.h2,a.read-more{color:#555;background-color:#eaeaea;margin-top:0px}
 /*h2:not(.h2){width:auto!important}*/
 a.read-more{padding:9px 8px 8px 9px;width:auto}
-.h0 span,h1.h1 span,a.btn span,a.twitter_btn span,a.twitch_btn span,a.tumblr_btn span,a.youtube_btn span{font-size:14px;}
+.h0b span,.h0 span,h1.h1 span,a.btn span,a.twitter_btn span,a.twitch_btn span,a.unity_btn span,a.itchio_btn span,a.github_btn span,a.instagram_btn span,a.tumblr_btn span,a.youtube_btn span{font-size:14px;}
 .h2 span{font-size:13px;}
 .h2 div{padding:6px 6px 6px 11px;}
 .h0{color:#555;background-color:#eaeaea;margin-top:0px}
+.h0b{color:#fff;background-color:#444;margin-top:0px}
 #h1,#h2{margin-top:15px}
 .close{font-size:28px;font-weight:bold;position:absolute;margin-top:-40px;right:-30px;text-align:center;top:40px;}
 a.btn{color:#fff;background-color:#888;}
-a.youtube_btn{color:#fff;background-color:#dd4646;}
-a.twitter_btn{color:#fff;background-color:#62a2d1;}
-a.twitch_btn{color:#fff;background-color:#6d4bad;}
+a.youtube_btn{color:#fff;background-color:#f63f3f;}
+a.twitter_btn{color:#fff;background-color:#58aee3;}
+a.twitch_btn{color:#fff;background-color:#7155a4;}
+a.unity_btn{color:#fff;background-color:#333;}
+a.github_btn{color:#fff;background-color:#333;}
+a.itchio_btn{color:#fff;background-color:#df8282;}
+a.instagram_btn{color:#fff;filter:brightness(1.1) grayscale(60%);background:linear-gradient(90deg, rgba(195,42,163,1) 0%, rgba(195,42,163,1) 80%, rgba(76,95,215,1) 90%, rgba(114,50,189,1) 95%, rgba(244,111,48,1) 99%, rgba(255,220,125,1) 100%);}
 a.tumblr_btn{color:#fff;background-color:#335170;}
 a.btn:hover{color:#eaeaea;background-color:#666;}
 /*a h2:not(.h2){color:#555;background-color:#eaeaea;}*/
 a.read-more{background-color:#eaeaea;}
-a.youtube_btn:hover{color:#fff;background-color:#b03838;}
-a.twitter_btn:hover{color:#fff;background-color:#4981aa;}
-a.twitch_btn:hover{color:#fff;background-color:#523588;}
+a.youtube_btn:hover{color:#fff;background-color:#f70000;}
+a.twitter_btn:hover{color:#fff;background-color:#1DA1F2;}
+a.twitch_btn:hover{color:#fff;background-color:#6441a5;}
+a.unity_btn:hover{color:#fff;background-color:#000;}
+a.github_btn:hover{color:#fff;background-color:#000;}
+a.itchio_btn:hover{color:#fff;background-color:#fa5c5c;}
+a.instagram_btn:hover{color:#fff;filter:none;background:linear-gradient(90deg, rgba(195,42,163,1) 0%, rgba(195,42,163,1) 80%, rgba(76,95,215,1) 90%, rgba(114,50,189,1) 95%, rgba(244,111,48,1) 99%, rgba(255,220,125,1) 100%);}
 a.tumblr_btn:hover{color:#fff;background-color:#1d2e3f;}
 /*a h2:not(.h2):hover,*/a.read-more:hover{color:#555;background-color:#ccc;}
 div.fp1 div.col1{display:inline-block;vertical-align:top;width:100%;}
