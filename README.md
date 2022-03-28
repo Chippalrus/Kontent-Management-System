@@ -1,6 +1,6 @@
 # For my own reference and backup
-A personal project / proof of concept to create blogs by using Google Docs/Drive, with a focus of not relying on MySQL (and backups from webserver). This is not really for anyone to use, but feel free to do so if you want to dig into to the horrible code base. This has no support or help, and is mainly here for my own backup/reference shoudl I decide to pick this back up.
-> I am not a web-developer, nor do I have any coding discipline. I simply build things out of interest tailored to my own interests and niche needs. This is just for my own use. Do not expect any type of support if you choose to use this.
+A personal project / proof of concept to create blogs by using Google Docs/Drive, with a focus of not relying on MySQL (and backups from webserver). This is not really for anyone to use, but feel free to do so if you want to dig into to the horrible code base. This has no support or help, and is mainly here for my own backup/reference should I decide to pick this back up.
+> I am not a "profestional" web-developer, nor do I have any coding discipline. I simply build things out of interest tailored to my own interests and niche needs. This is just for my own use. Do not expect any type of support if you choose to use this.
 
 # Usage
 Requires Google Drive API Key and defined as API_KEY in web.config.php
