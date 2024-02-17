@@ -12,7 +12,7 @@ Requires Google Drive API Key and defined as API_KEY in web.config.php
 
 # Kontent Management System
 KMS is a web builder / CMS that constructs web pages based on the hierarchy of a given Google Drive directory.
-- https://kms.chippalrus.ca/
+- https://kms.chippalrus.ca/ ( Probably no longer accessible )
 
 # Requirements
 - Web-Server
