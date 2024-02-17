@@ -1,5 +1,5 @@
 # Not Maintained
-No longer updating this unless I have some specific need to add to it. Everything I build I use myself. Read disclaimer too.
+No longer updating this unless I have some specific need to add to it. Everything I build I use myself. Read disclaimer too. I never got around to building a proper update web-site function to this, I've just manually updated my own stuff or utiltised a timed repeat curl on the web-server.
 
 # Disclaimer
 A personal project / proof of concept to create blogs by using Google Docs/Drive, with a focus of not relying on MySQL (and backups from webserver). This is not an alternative to a professional CMS or Website Generator.
@@ -11,11 +11,14 @@ Requires Google Drive API Key and defined as API_KEY in web.config.php
 - Call CDriver()->ConstructWebsite( rootDirectoryID, pageSize, thumbnailSize ) to build a website.
 
 # Kontent Management System
-KMS is a web builder / CMS that constructs web pages based on the hierarchy of a given Google Drive directory.
-- https://kms.chippalrus.ca/ ( Probably no longer accessible )
+KMS is a web builder that turns Google Drive into a CMS. It constructs static or dynamic web pages based on the hierarchy of a given Google Drive directory.
+
+- Google Documents becomes the Blog Post or Pages (index.html/.php) for the website
+- Google Drive Folders becomes the navigation tree (You can pair a Google Doc with Folder display as Page and still utilise sub-pages/categories)
+- Example: https://kms.chippalrus.ca/ (Probably no longer accessible)
 
 # Requirements
-- Web-Server
+- Web-Server (optional: access to timed curl if you want to setup auto generation)
 - PHP 7.0+
 - Google API Key
 - Parsedown ( https://github.com/erusev/parsedown )
