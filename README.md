@@ -1,6 +1,5 @@
-# Hiatus, I keep getting burned out building this.
-Poorly written code. Right now, since I revamped it to work with only shared documents, it currently generates everything all at once, which can cause HTTP timeouts.
-I will be implimenting staggered generation when I feel like it. There are a bunch of optimisation that can also be done, but I'm burnt out on this project. I will be rewriting some code to place the config files outside of scope. Whenever I get around to it.... probably never.
+# Not Maintained
+No longer updating this unless I have some specific need to add to it. Everything I build I use myself. Read disclaimer too.
 
 # Disclaimer
 A personal project / proof of concept to create blogs by using Google Docs/Drive, with a focus of not relying on MySQL (and backups from webserver). This is not an alternative to a professional CMS or Website Generator.
